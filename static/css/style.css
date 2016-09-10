@@ -52,7 +52,7 @@ span {
 
 h1, h2, h3, h4, h5 {
     font-weight: 500;
-    color: #607d8b;
+    color: #2A569A;
     line-height: 1.5;
 }
 
@@ -122,9 +122,20 @@ hr {
 
 body {
     background-color: lightslategray;
-    font-family: sans-serif, Microsoft Yahei, Helvetica Neue;
+    font-family: '微软雅黑',sans-serif, Microsoft Yahei, Helvetica Neue;
     zoom: 80%;
+    position: relative;
 }
+
+body:after{    content: '';
+    background: url(../image/bg.png);
+    position: fixed;
+    opacity: 0.2;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;}
 
 footer {
 }
@@ -146,7 +157,7 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-    background-color: #708d9b;
+    background-color: #63A5FB;
 }
 
 progress::-moz-progress-bar {
@@ -155,7 +166,7 @@ progress::-moz-progress-bar {
 }
 
 progress::-moz-progress-value {
-    background-color: #708d9b;
+    background-color: #63A5FB;
 }
 
 .progress-list {
@@ -191,11 +202,11 @@ progress::-moz-progress-value {
     margin: 0 auto;
     margin-top:20px;
     margin-bottom: 10px;
-    background-image:url('https://avatars0.githubusercontent.com/u/21081491?v=3&s=460');
+    background-image:url('../image/me.jpg');
     background-size: 120%;
     background-position:center;
     border-radius:50%;
-    border:5px solid #607d8b;
+    border:5px solid #2a569a;
     width:160px;
     height:160px;
 }
@@ -203,11 +214,11 @@ progress::-moz-progress-value {
 
 .container {
     position: relative;
-    margin: 0 auto;
+    margin: 20px auto;
     width: 1050px;
     min-height: 1550px;
     background-color: white;
-
+    box-shadow: 0 0 45px 5px #464646;
 }
 
 .side {
@@ -286,4 +297,15 @@ ul li{
     
 }
 
+#github-url{
+    cursor: pointer;}
 
+
+.experience-list p > span{ display: block;
+    color: #2a569a;}
+
+.text-indent{ text-indent: 2em;}
+
+ul.project p{ position: relative; padding-left: 4rem;}
+ul.project h3{ text-indent: -.5em;}
+ul.project p:before{ content: attr(item); color: #2a569a; position: absolute; height: 100%; width: 5em; left: 0;}
